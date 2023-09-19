@@ -31,7 +31,7 @@ int main()
         {
             for (int j = 0; j <= sum; j++)
             {
-                if (arr[n - 1] <= j)
+                if (arr[i - 1] <= j)
                 {
                     dp[i][j] = dp[i - 1][j - arr[i - 1]] || dp[i - 1][j];
                 }
